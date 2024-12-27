@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+  width: 300px;
+  background-color: #f4f4f4;
+}
+
+.quote-container {
+  text-align: center;
+  padding: 15px;
+}
+
+#quote {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #333;
+  line-height: 1.4;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #0b6a34;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #05663c;
+}
+
+/* #motivational-popup {
+  all: initial;
+  position: fixed !important;
+  top: 20px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background-color: #ffffff !important;
+  padding: 15px 20px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 8px !important;
+  z-index: 10000; 
+  width: 300px !important;
+  max-width: 90% !important;
+  font-family: Arial, sans-serif !important;
+  text-align: center !important;
+  animation: slideDown 0.3s ease-out !important;
+} */
+
+#motivational-popup, #motivational-popup * {
+  all: unset;
+  position: fixed !important;
+  top: 20px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background-color: #ffffff !important;
+  padding: 15px 20px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 8px !important;
+  z-index: 10000 !important;
+  width: 300px !important;
+  max-width: 90% !important;
+  font-family: Arial, sans-serif !important;
+  text-align: center !important;
+}
+
+
+.popup-content {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.popup-content p {
+  margin: 0 0 15px 0 !important;
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+  color: #333 !important;
+}
+
+#close-popup {
+  padding: 5px 15px !important;
+  background-color: #007BFF !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+}
+
+#close-popup:hover {
+  background-color: #0056b3 !important;
+}
+
+/* Animation for popup */
+@keyframes slideDown {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 20px;
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  from {
+    top: 20px;
+    opacity: 1;
+  }
+  to {
+    top: -100px;
+    opacity: 0;
+  }
+}
