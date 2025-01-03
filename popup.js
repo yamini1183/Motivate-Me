@@ -1,8 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById("new-quote").addEventListener("click", () => {
-      const randomIndex = Math.floor(Math.random() * quotes.length);
-      document.getElementById("quote").textContent = quotes[randomIndex];
-    });
-  });
-  
-  
+document.getElementById("start-alerts").addEventListener("click", () => {
+  chrome.runtime.sendMessage({ action: "start" });
+  alert("Motivational alerts have started!");
+});
+
+document.getElementById("stop-alerts").addEventListener("click", () => {
+  chrome.runtime.sendMessage({ action: "stop" });
+  alert("Motivational alerts have been stopped!");
+});

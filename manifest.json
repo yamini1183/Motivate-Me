@@ -1,9 +1,9 @@
 {
     "manifest_version": 3,
-    "name": "Motivational Browser Popups",
+    "name": "Motivate Me",
     "version": "1.0",
     "description": "Stay motivated with motivational popups in the browser!",
-    "permissions": ["activeTab", "scripting", "alarms", "storage"],
+    "permissions": ["activeTab", "scripting", "alarms", "storage", "notifications"],
     "host_permissions": ["<all_urls>"],
     "background": {
     "service_worker": "background.js"
@@ -17,9 +17,11 @@
       "default_popup": "popup.html",
       "default_icon": "icon.png"
     },
-    "content_scripts": [{
+    "content_scripts": [
+    {
       "matches": ["<all_urls>"],
-      "js": ["quotes.js", "content.js"],
+      "js": ["content.js"],
       "css": ["styles.css"]
-    }]
+    }
+  ]
   }
